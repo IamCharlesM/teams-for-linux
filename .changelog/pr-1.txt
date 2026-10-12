@@ -1,0 +1,1 @@
+security: remove PolinRider payload and add pre-install guard - by @IamCharlesM (#1)
