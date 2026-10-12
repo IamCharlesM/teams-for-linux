@@ -17,6 +17,9 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
 
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
+
       - name: Install Node.js and NPM
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -48,6 +51,9 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
 
       - name: Install Node.js and NPM
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
@@ -137,6 +143,9 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
 
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
+
       - name: Install Node.js and NPM
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -220,6 +229,9 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
 
       - name: Install Node.js and NPM
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
@@ -305,6 +317,9 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
 
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
+
       - name: Install Node.js and NPM
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
@@ -339,6 +354,9 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
 
       - name: Install Node.js and NPM
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
