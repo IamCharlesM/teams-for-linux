@@ -68,6 +68,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Check for supply-chain payload (before install)
+        run: bash scripts/check-payload.sh
+
       - name: Generate summary with Gemini
         if: steps.setup.outputs.changelog_exists == 'false'
         id: gemini
